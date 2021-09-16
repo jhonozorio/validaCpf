@@ -1,16 +1,16 @@
-#Valida CPF.
+# Valida CPF.
 
 Algoritmo para verificar se um CPF é válido ou não.
 
 Em um sistema corporativo, é comum a necessidade de validar CPF. Muitos não sabem mas existe uma regra matemática que determina se um CPF é válido ou não.
 
-##Regra para validar CPF
+## Regra para validar CPF
 
 O cálculo para validar um CPF é especificado pelo Ministério da Fazenda, Vamos entender como funciona.
 
 O CPF é formado por 11 dígitos numéricos que seguem a máscara "###.###.###-##", a verificação do CPF acontece utilizando os 9 primeiros dígitos e, com um cálculo simples, verificando se o resultado corresponde aos dois últimos dígitos (depois do sinal "-").
 
-##Validação do primeiro dígito
+## Validação do primeiro dígito
 
 Vamos usar como exemplo, um CPF fictício "529.982.247-25".
 
@@ -36,7 +36,7 @@ Vamos conferir o primeiro dígito verificador do nosso exemplo:
 
 Isso significa que o nosso CPF exemplo passou na validação do primeiro dígito.
 
-##Validação do segundo digito
+## Validação do segundo digito
 
 A validação do segundo dígito é semelhante à primeira, porém vamos considerar os 9 primeiros dígitos, mais o primeiro dígito verificador, e vamos multiplicar esses 10 números pela sequencia decrescente de 11 a 2. Vejamos:
 
@@ -58,7 +58,7 @@ Verificamos, se o resto corresponde ao segundo dígito verificador.
 
 Com essa verificação, constatamos que o CPF 529.982.247-25 é válido.
 
-##CPFs inválidos conhecidos
+## CPFs inválidos conhecidos
 
 Existe alguns casos de CPFs que passam nessa validação que expliquei, mas que ainda são inválidos. É os caso dos CPFs com dígitos repetidos (111.111.111-11, 222.222.222-22, ...)
 
