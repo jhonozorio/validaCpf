@@ -1,0 +1,23 @@
+body {
+  background-color: #3b5998;
+}
+
+.container {
+  background-color: #f7f7f7;
+  max-width: 500px;
+  width: 70%;
+  max-height: 200px;
+  height: 70%;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 10px;
+}
+
+#button {
+  background-color: #3b5998;
+  color: #f7f7f7;
+}
