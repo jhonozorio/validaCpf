@@ -1,3 +1,12 @@
+
+
+// let campo = document.getElementById('campo');
+
+// campo.addEventListener('focus', () => {
+//    campo.style.borderColor = "#3b5998";
+// });
+
+
 function validaCpf(cpfEnviado) {
   Object.defineProperty(this, 'cpfLimpo', {
     enumerable: true,
@@ -39,6 +48,9 @@ validaCpf.prototype.criaDigito = function(cpfParcial) {
   return digito > 9 ? '0' : String(digito);
 };
 
+let resultado = document.getElementById('result');
+
+
 
 const validacao = function(){
   let cpfRecebido = document.getElementById("campo").value;
@@ -46,8 +58,12 @@ const validacao = function(){
   const cpf = new validaCpf(cpfRecebido);
 
  if(cpf.valida()){
-  alert('CPF Válido!')
+  resultado.innerHTML = 'CPF Válido!';
+  resultado.style.color = '#2ecc71';
+
 } else {
-  alert('CPF Inválido!')
+    resultado.innerHTML = 'CPF Inválido!';
+    resultado.style.color = '#c0392b';
+
 };
 };
