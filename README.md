@@ -69,3 +69,7 @@ Neste algoritmo, verificamos também se todos os dígitos do CPF são iguais e, 
 ### Página simples com o nosso algoritmo implementado:
 
 ![](/img/validaCpf.gif)
+
+### Link para testar o algoritmo
+
+<https://valida-cpf-alpha.vercel.app/>
