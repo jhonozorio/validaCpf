@@ -1,4 +1,5 @@
 class ValidaCpf {
+  //recebemos o cpf e substituimos qualquer caractere especial, ou letras por uma string vazia por meio de uma espressão regular
   constructor(cpfEnviado){
   Object.defineProperty(this, 'cpfLimpo', {
     writable: false,
@@ -7,7 +8,7 @@ class ValidaCpf {
     value: cpfEnviado.replace(/\D+/g, '')
   })
 };
-
+//recebemos os 9 primeiros digitos, para formar um novo cpf valido e posteriormente comparar com o cpf recebido
 geraNovoCpf() {
   const semDigitos = this.cpfLimpo.slice(0, -2);
   const digito1 = this.geraDigito(semDigitos);
